@@ -28,7 +28,7 @@ userRoutes(app);
 
 // token middleware
 tkFn = require("./middleware/verifyToken")
-//app.use(tkFn);
+app.use(tkFn);
 
 //Student Routes Loading
 const studentRoutes = require("./routes/student.routes");
